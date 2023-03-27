@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) throws TelegramApiException {
 
         if (args == null || args.length != 2) {
-            System.out.println("You must run bot with 2 args - BotToken and bot UserName");
+            log.info("You must run bot with 2 args - BotToken and bot UserName");
         } else {
             TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
             try {

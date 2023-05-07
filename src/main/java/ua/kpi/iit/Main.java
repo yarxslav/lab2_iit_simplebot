@@ -20,7 +20,7 @@ public class Main {
             try {
                 log.info("Registering bot...");
                 telegramBotsApi.registerBot(new BestBot(args[0], args[1]));
-                telegramBotsApi.registerBot(new BestBot("6149272482:AAFeYt5GSnJsO5v5AHK89WN2rT_RuKlyvj0", "@LookAtMyTGBot"));
+                telegramBotsApi.registerBot(new BestBot("TOKEN", "BOT_NAME"));
             } catch (TelegramApiRequestException e) {
                 log.error("Failed to register bot(check internet connection / bot token or make sure only one instance of bot is running).", e);
             }
